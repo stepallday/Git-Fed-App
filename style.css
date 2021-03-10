@@ -40,7 +40,7 @@ input,button{
 }
 
 input[type="text"]{
-    width: 300px;
+    width: 425px;
 }
 
 .search-btn{
@@ -86,7 +86,11 @@ input[type="text"]{
     left: 0;
     height: 100%;
     width: 100%;
+<<<<<<< HEAD
     background: rgba(253, 244, 244, 0.7);
+=======
+    background: rgba(255,255,255,.7);
+>>>>>>> a57a050fd350d8f2428cd2ae83e3eaf0976cd7c9
     display: flex;
     align-items: center;
     justify-content: center;
