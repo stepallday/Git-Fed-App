@@ -72,7 +72,7 @@ function randomMeal(){
     mealsEl.innerHTML='';
     resultHeading.innerHTML='';
 
-    fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/random.php`) 
     .then(res => res.json())
     .then(data => {
         const meal = data.meals[0];
@@ -132,5 +132,31 @@ mealsEl.addEventListener("click", (e) => {
       "data-mealid"
     );
     getMealById(mealID);
+
+    button.addEventListener('click', () => {
+
+    
+    
+        // open an empty window
+    const tab = window.open('about:blank');
+
+    // make an API call
+    fetch('https://reqres.in/api/users')
+        .then(res => res.json())
+        .then(json => {
+
+            // TODO: do something with JSON response
+
+            // update the actual URL
+            tab.location = 'https://attacomsian.com';
+            tab.focus();
+        })
+        .catch(err => {
+            // close the empty window
+            tab.close();
+        });
+});
+
+
   }
 });
