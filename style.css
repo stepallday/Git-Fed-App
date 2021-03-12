@@ -1,5 +1,8 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -11,6 +14,31 @@ body{
     font-size: 2rem;
     text-shadow: 0 0.4rem 6rem rgb(167, 44, 44);
     margin: 0;
+    position: relative;
+    padding-bottom: 58px;
+    min-width: 100vh;
+
+}
+main{
+    width: 90px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    /*min-height: calc(100vh - 211px - 58px);*/
+}
+
+
+
+
+footer{
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color:rgb(252, 243, 243);
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
 
 
@@ -25,6 +53,9 @@ body{
     justify-content: center;
     text-align: center;
 }
+
+
+
 
 .flex{
     display: flex;
@@ -86,11 +117,7 @@ input[type="text"]{
     left: 0;
     height: 100%;
     width: 100%;
-<<<<<<< HEAD
     background: rgba(253, 244, 244, 0.7);
-=======
-    background: rgba(255,255,255,.7);
->>>>>>> a57a050fd350d8f2428cd2ae83e3eaf0976cd7c9
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,5 +199,8 @@ input[type="text"]{
         height: 300px;
         width: 300px;
     }
+    
 }
+
+
 
